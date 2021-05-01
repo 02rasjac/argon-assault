@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 7641289060762843477}
   - component: {fileID: 7673553869120235747}
   - component: {fileID: 7661160515262480629}
+  - component: {fileID: 7639695610673692769}
   m_Layer: 0
   m_Name: StarSparrow6
   m_TagString: Untagged
@@ -294,6 +295,74 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7639695610673692769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7639107093745436489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0086a22d964c1404ab3ddc5ffbd49205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movement:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 2b9b6d3c-7b34-4fd7-bbe4-e9103ac9b207
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 00eff5e6-19cb-4835-aa25-bcacad42c11f
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 6289f630-7010-4640-ba3e-f7a0e1796108
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 946670cc-0f8a-4226-903a-44ea1b0d5a31
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 75a34292-6fb6-4b98-a559-ad7433693e36
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: a9dd9b3c-d486-460a-8f47-b11aba1f7a33
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: 
+      m_Id: dbcc13b8-6688-4d2b-ace2-583f6acffdad
+      m_Path: <Gamepad>/leftStick
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 0
 --- !u!1 &7639214761677375169
 GameObject:
   m_ObjectHideFlags: 0

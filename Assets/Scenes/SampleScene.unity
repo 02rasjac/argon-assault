@@ -610,7 +610,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7639107093745436489, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
       propertyPath: m_Name
-      value: StarSparrow6
+      value: PlayerShip
       objectReference: {fileID: 0}
     - target: {fileID: 7641289060762843477, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
       propertyPath: m_RootOrder
