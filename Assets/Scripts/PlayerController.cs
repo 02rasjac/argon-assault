@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
         // Move the player by setting the local position
         transform.localPosition = new Vector3(
             transform.localPosition.x + (speed * horiz * Time.deltaTime),
-            transform.localPosition.y,
+            transform.localPosition.y + (speed * verti * Time.deltaTime),
             transform.localPosition.z
         );
     }

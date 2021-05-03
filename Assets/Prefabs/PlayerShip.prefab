@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 7661160515262480629}
   - component: {fileID: 7639695610673692769}
   m_Layer: 0
-  m_Name: StarSparrow6
+  m_Name: PlayerShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,6 +323,46 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement
       m_Flags: 4
+    - m_Name: 2D Vector
+      m_Id: 67888580-0f76-40c1-b63f-8be8cc1353c5
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 6067d58e-5fd7-4edf-8c65-571e24c83a62
+      m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 7813423d-ff8c-4644-b4de-d053e05b0316
+      m_Path: <Keyboard>/downArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: left
+      m_Id: ad7fd1d5-3085-4e57-acf3-7c34c5f9fa19
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 85979797-464f-4fc5-aef5-31518e3eb42e
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement
+      m_Flags: 8
     - m_Name: up
       m_Id: 6289f630-7010-4640-ba3e-f7a0e1796108
       m_Path: <Keyboard>/w
@@ -363,6 +403,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement
       m_Flags: 0
+  speed: 25
 --- !u!1 &7639214761677375169
 GameObject:
   m_ObjectHideFlags: 0
