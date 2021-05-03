@@ -307,6 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0086a22d964c1404ab3ddc5ffbd49205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clampMinMax: {x: 12, y: 10}
+  speed: 25
   movement:
     m_Name: Movement
     m_Type: 0
@@ -403,7 +405,6 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement
       m_Flags: 0
-  speed: 25
 --- !u!1 &7639214761677375169
 GameObject:
   m_ObjectHideFlags: 0
