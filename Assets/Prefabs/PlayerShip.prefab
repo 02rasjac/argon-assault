@@ -309,6 +309,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clampMinMax: {x: 12, y: 10}
   speed: 25
+  pitchPositionFactor: 3
+  pitchMovingFactor: 10
+  yawPositionFactor: 2
+  rollMovingFactor: 10
   movement:
     m_Name: Movement
     m_Type: 0
