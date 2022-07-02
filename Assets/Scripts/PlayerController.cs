@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("X respectivly Y are symmetrical")]
     [SerializeField] Vector2 clampMinMax;
     [SerializeField] float speed = 30f;
+    [SerializeField] float rotationFactor = 1f;
 
     [SerializeField] float pitchPositionFactor = 0.05f;
     [SerializeField] float pitchMovingFactor = 5f;
@@ -15,7 +16,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InputAction movement;
 
     float horiz, verti;
-    float tPitch = 0.5f, tRoll = 0.5f;
 
     void OnEnable() {
         movement.Enable();
@@ -43,7 +43,8 @@ public class PlayerController : MonoBehaviour
         float roll = -rollMovingFactor * horiz;
 
 
-        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+        Quaternion targetRotation = Quaternion.Euler(pitch, yaw, roll);
+        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, targetRotation, rotationFactor);
     }
 
     void translate()
