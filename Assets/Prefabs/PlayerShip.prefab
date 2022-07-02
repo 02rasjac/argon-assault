@@ -313,11 +313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0086a22d964c1404ab3ddc5ffbd49205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clampMinMax: {x: 12, y: 8}
-  speed: 25
-  pitchPositionFactor: 3
-  pitchMovingFactor: 10
-  yawPositionFactor: 0.5
+  clampMinMax: {x: 14, y: 8.5}
+  speed: 30
+  pitchPositionFactor: 0.05
+  pitchMovingFactor: 5
+  yawPositionFactor: 0.2
   rollMovingFactor: 10
   movement:
     m_Name: Movement
