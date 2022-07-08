@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &46696281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8290536137523932569, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+  m_PrefabInstance: {fileID: 5200957882640796155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +222,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &827879727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8290536138394371994, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+  m_PrefabInstance: {fileID: 5200957882640796155}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &830654436 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5200957882380602911, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
@@ -531,6 +541,10 @@ PrefabInstance:
       value: 27019f04-33ac-43a2-b380-60531690ea5e
       objectReference: {fileID: 0}
     - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
       propertyPath: shootInput.m_Name
       value: Shoot Input
       objectReference: {fileID: 0}
@@ -538,6 +552,14 @@ PrefabInstance:
       propertyPath: shootInput.m_Type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 827879727}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 46696281}
     - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
       propertyPath: shootInput.m_ExpectedControlType
       value: Button

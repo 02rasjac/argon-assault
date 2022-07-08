@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Vector2 clampMinMax;
     [SerializeField] float speed = 30f;
     [SerializeField] float rotationFactor = 1f;
+    [SerializeField] GameObject[] lasers;
 
     [SerializeField] float pitchPositionFactor = 0.05f;
     [SerializeField] float pitchMovingFactor = 5f;
@@ -70,8 +72,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void shoot() {
-        if (shootInput.IsPressed()) {
-            Debug.Log("Fire!");
+        bool pressed = shootInput.IsPressed();
+        foreach (GameObject laser in lasers) {
+            laser.SetActive(pressed);
         }
     }
 }
