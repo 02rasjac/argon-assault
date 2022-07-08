@@ -526,5 +526,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_Id
+      value: 27019f04-33ac-43a2-b380-60531690ea5e
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_Name
+      value: Shoot Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[11].m_Id
+      value: 75deab66-94af-438c-964e-77a11d8e53e0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[12].m_Id
+      value: 4d3c2228-27b0-4427-9109-f1df191c6ecb
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 69634b5e-4666-4892-996d-71feae622eab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[1].m_Id
+      value: fef428fa-1585-4e9d-8a19-ed644e5b69d8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[11].m_Path
+      value: '*/{PrimaryAction}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/rightShoulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[11].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: movement.m_SingletonActionBindings.Array.data[12].m_Action
+      value: Movement
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Shoot Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200957882640796101, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Shoot Input
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3236e5b65f7dbf4697c332740a17875, type: 3}

@@ -14,15 +14,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float rollMovingFactor = 10f;
 
     [SerializeField] InputAction movement;
+    [SerializeField] InputAction shootInput;
 
     float horiz, verti;
 
     void OnEnable() {
         movement.Enable();
+        shootInput.Enable();
     }
 
     void OnDisable() {
         movement.Disable();
+        shootInput.Disable();
     }
 
     void Update()
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour
         
         translate();
         rotate();
+        shoot();
     }
 
     void rotate() {
@@ -63,5 +67,11 @@ public class PlayerController : MonoBehaviour
 
         // Move the player by setting the local position
         transform.localPosition = new Vector3(newX, newY, transform.localPosition.z);
+    }
+
+    void shoot() {
+        if (shootInput.IsPressed()) {
+            Debug.Log("Fire!");
+        }
     }
 }
