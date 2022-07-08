@@ -74,7 +74,8 @@ public class PlayerController : MonoBehaviour
     void shoot() {
         bool pressed = shootInput.IsPressed();
         foreach (GameObject laser in lasers) {
-            laser.SetActive(pressed);
+            var em =  laser.GetComponent<ParticleSystem>().emission;
+            em.enabled = pressed;
         }
     }
 }
