@@ -149,6 +149,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerShip
       objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_Id
+      value: 27019f04-33ac-43a2-b380-60531690ea5e
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 8290536138394371994}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8290536137523932569}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 69634b5e-4666-4892-996d-71feae622eab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[1].m_Id
+      value: fef428fa-1585-4e9d-8a19-ed644e5b69d8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/rightShoulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Shoot Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 7639695610673692769, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+      propertyPath: shootInput.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Shoot Input
+      objectReference: {fileID: 0}
     - target: {fileID: 7641289060762843477, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -198,5 +250,32 @@ PrefabInstance:
 --- !u!4 &5198115937032302833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7641289060762843477, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+  m_PrefabInstance: {fileID: 2461257935008008612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5200437526826749677 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7639107093745436489, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+  m_PrefabInstance: {fileID: 2461257935008008612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3024492558591455364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200437526826749677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f3687566e1f78e40ae2434e4e814b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8290536137523932569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5847294903807419453, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
+  m_PrefabInstance: {fileID: 2461257935008008612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8290536138394371994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5847294905080778302, guid: fb3ccc9bd3effb845b45b418f620311c, type: 3}
   m_PrefabInstance: {fileID: 2461257935008008612}
   m_PrefabAsset: {fileID: 0}
