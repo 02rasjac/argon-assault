@@ -29,12 +29,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] InputAction shootInput;
 
     float horiz, verti;
-    float deadTimer = 0f;
-    bool dead = false;
-
-    public void Kill() {
-        dead = true;
-    }
 
     void OnEnable() {
         movement.Enable();
@@ -51,16 +45,9 @@ public class PlayerController : MonoBehaviour
         horiz = movement.ReadValue<Vector2>().x;
         verti = movement.ReadValue<Vector2>().y;
         
-        if (!dead) {
-            translate();
-            rotate();
-            shoot();
-        } else {
-            deadTimer += Time.deltaTime;
-            if (deadTimer > 1f) {
-                SceneManager.LoadScene("Level");
-            }
-        }
+        translate();
+        rotate();
+        shoot();
     }
 
     void rotate() {
