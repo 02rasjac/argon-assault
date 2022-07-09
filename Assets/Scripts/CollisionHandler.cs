@@ -9,5 +9,6 @@ public class CollisionHandler : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         Debug.Log($"{this.name} **triggered by** {other.gameObject.name}");
+        this.GetComponent<PlayerController>().Kill();
     }
 }
