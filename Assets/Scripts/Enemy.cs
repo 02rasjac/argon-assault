@@ -18,23 +18,30 @@ public class Enemy : MonoBehaviour {
     ScoreBoard scoreBoard;
 
     void Start() {
+        gameObject.AddComponent<Rigidbody>().useGravity = false;
         scoreBoard = FindObjectOfType<ScoreBoard>();    
     }
 
     void OnParticleCollision(GameObject other) {
-        health--;
-        if (!exploding) { 
-            scoreBoard.IncreaseScore(pointsPerHit);
-            var hitVFXInst = Instantiate(hitVFX, transform.position, Quaternion.identity);
-            hitVFXInst.transform.parent = parent.transform;
-            
-            if (health <= 0) {
-                exploding = true;
-                var deathVFXInst = Instantiate(deathVFX, transform.position, Quaternion.identity);
-                deathVFXInst.transform.parent = parent.transform;
-
-                Destroy(this.gameObject);
-            }
+        if (!exploding) {
+            ProcessHit();
+            if (health < 1)
+                Kill();
         }
+    }
+
+    void ProcessHit() {
+        health--;
+        scoreBoard.IncreaseScore(pointsPerHit);
+        var hitVFXInst = Instantiate(hitVFX, transform.position, Quaternion.identity);
+        hitVFXInst.transform.parent = parent.transform;
+    }
+
+    void Kill() {
+        exploding = true;
+        var deathVFXInst = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        deathVFXInst.transform.parent = parent.transform;
+
+        Destroy(this.gameObject);
     }
 }
