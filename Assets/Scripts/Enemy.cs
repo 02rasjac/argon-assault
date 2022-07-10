@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     [Tooltip("Ammount of points player gets when killing this enemy")]
-    [SerializeField] int killPoints = 1;
+    [SerializeField] int pointsPerHit = 1;
+    [Tooltip("How many hits the enemy can take before dieing")]
+    [SerializeField] int health = 3;
 
     [Header("VFX")]
-    [SerializeField] GameObject deatchVFX;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject hitVFX;
     [SerializeField] GameObject parent;
 
     bool exploding = false;
@@ -19,13 +22,19 @@ public class Enemy : MonoBehaviour {
     }
 
     void OnParticleCollision(GameObject other) {
-        if (!exploding) {
-            exploding = true;
-            var vfx = Instantiate(deatchVFX, transform.position, Quaternion.identity);
-            vfx.transform.parent = parent.transform;
+        health--;
+        if (!exploding) { 
+            scoreBoard.IncreaseScore(pointsPerHit);
+            var hitVFXInst = Instantiate(hitVFX, transform.position, Quaternion.identity);
+            hitVFXInst.transform.parent = parent.transform;
+            
+            if (health <= 0) {
+                exploding = true;
+                var deathVFXInst = Instantiate(deathVFX, transform.position, Quaternion.identity);
+                deathVFXInst.transform.parent = parent.transform;
 
-            scoreBoard.IncreaseScore(killPoints);
-            Destroy(this.gameObject);
+                Destroy(this.gameObject);
+            }
         }
     }
 }
