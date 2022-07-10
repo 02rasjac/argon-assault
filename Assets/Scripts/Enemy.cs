@@ -12,14 +12,15 @@ public class Enemy : MonoBehaviour {
     [Header("VFX")]
     [SerializeField] GameObject deathVFX;
     [SerializeField] GameObject hitVFX;
-    [SerializeField] GameObject parent;
 
     bool exploding = false;
     ScoreBoard scoreBoard;
+    GameObject spawnableParent;
 
     void Start() {
         gameObject.AddComponent<Rigidbody>().useGravity = false;
-        scoreBoard = FindObjectOfType<ScoreBoard>();    
+        scoreBoard = FindObjectOfType<ScoreBoard>();
+        spawnableParent = GameObject.FindWithTag("SpawnAtRuntime");
     }
 
     void OnParticleCollision(GameObject other) {
@@ -34,13 +35,13 @@ public class Enemy : MonoBehaviour {
         health--;
         scoreBoard.IncreaseScore(pointsPerHit);
         var hitVFXInst = Instantiate(hitVFX, transform.position, Quaternion.identity);
-        hitVFXInst.transform.parent = parent.transform;
+        hitVFXInst.transform.parent = spawnableParent.transform;
     }
 
     void Kill() {
         exploding = true;
         var deathVFXInst = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        deathVFXInst.transform.parent = parent.transform;
+        deathVFXInst.transform.parent = spawnableParent.transform;
 
         Destroy(this.gameObject);
     }
