@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsPerHit: 10
   health: 6
-  deathVFX: {fileID: 6873857489294397375, guid: 38179406f91b2734e98905c46ceb4bc2, type: 3}
+  deathFX: {fileID: 6873857489294397375, guid: 38179406f91b2734e98905c46ceb4bc2, type: 3}
   hitVFX: {fileID: 4790901476681053245, guid: 5ccae2577b1dc9d41a8e656380110803, type: 3}
 --- !u!1 &3061640810746566594
 GameObject:

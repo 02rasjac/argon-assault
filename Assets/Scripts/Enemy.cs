@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField] int health = 3;
 
     [Header("VFX")]
-    [SerializeField] GameObject deathVFX;
+    [SerializeField] GameObject deathFX;
     [SerializeField] GameObject hitVFX;
 
     bool exploding = false;
@@ -40,8 +40,8 @@ public class Enemy : MonoBehaviour {
 
     void Kill() {
         exploding = true;
-        var deathVFXInst = Instantiate(deathVFX, transform.position, Quaternion.identity);
-        deathVFXInst.transform.parent = spawnableParent.transform;
+        var deathFXInst = Instantiate(deathFX, transform.position, Quaternion.identity);
+        deathFXInst.transform.parent = spawnableParent.transform;
 
         Destroy(this.gameObject);
     }
